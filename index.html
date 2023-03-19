@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Logo</a>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contatc</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <img src="imgs/monutain_01.png" alt="" id="m1">
+        <img src="imgs/monutain_02.png" alt="" id="m2">
+        <img src="imgs/monutain_03.png" alt="" id="m3">
+        <img src="imgs/monutain_04.png" alt="" id="m4">
+        <h2 id="txt">Hello, Friends</h2>
+        <img src="imgs/trees.png" alt="" id="tr">
+        <img src="imgs/cable_cars.png" alt="" id="crs">
+        <img src="imgs/house.png" alt="" id="house">
+    </section>
+    <div class="sec">
+        <h2>Parallax Scrolling Website</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sint cum vitae accusantium autem veniam a ab nesciunt voluptatum consequatur aperiam eum expedita, harum officia quis commodi accusamus dicta perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum illo a fuga quam nobis beatae temporibus, incidunt magni molestiae voluptatem ipsa corrupti debitis voluptatum! Quod accusamus eveniet soluta iusto eos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, quibusdam similique neque pariatur aperiam, perspiciatis laborum numquam corporis quaerat culpa debitis non distinctio quisquam illo aliquid illum reiciendis animi sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi rerum dolores dolorem porro delectus adipisci! Labore placeat enim magni veniam cum officia atque dolore sunt nemo consequatur? Quam, aliquam aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus reiciendis in? Nihil, excepturi! Nostrum obcaecati esse deserunt ad, rem, doloribus ex ullam sequi voluptatibus, neque nisi excepturi quas. Saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores possimus veritatis nemo iste officia non, eligendi quibusdam. Ad, temporibus? Molestias officiis, esse cum assumenda accusamus culpa. Distinctio libero sapiente unde! <br> <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ad iusto quibusdam, vel corrupti, eaque rerum excepturi odio maiores ea exercitationem. Sequi inventore blanditiis quos quis harum provident necessitatibus dolorum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est dolorem fuga laudantium voluptates cumque aspernatur. Beatae totam dolores minus aliquam assumenda non magnam? Est nemo explicabo aperiam culpa veritatis corrupti? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem reprehenderit illum suscipit, eaque minus veritatis cupiditate quod amet quam a quae quaerat dolores ipsa voluptatum soluta, non incidunt rem voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sint saepe quod quas provident magni impedit ipsa, nam quis ducimus et, aperiam laudantium neque, corrupti eaque? Temporibus illum exercitationem molestias!</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.from("#txt", {
+            scrollTrigger : {
+                scrub: true
+            },
+            x: 350,
+        })
+        gsap.from("#m1", {
+            scrollTrigger : {
+                scrub: true
+            },
+            y: 100,
+        })
+        gsap.from("#m2", {
+            scrollTrigger : {
+                scrub: true
+            },
+            y: 50,
+        })
+        gsap.from("#m3", {
+            scrollTrigger : {
+                scrub: true
+            },
+            y: 200,
+        })
+        gsap.from("#m4", {
+            scrollTrigger : {
+                scrub: true
+            },
+            y: 150,
+        })
+        gsap.from("#tr", {
+            scrollTrigger : {
+                scrub: true
+            },
+            y: 150,
+        })
+        gsap.from("#crs", {
+            scrollTrigger : {
+                scrub: true
+            },
+            x: 100,
+        })
+        gsap.from("#house", {
+            scrollTrigger : {
+                scrub: true
+            },
+            y: 50,
+        })
+    </script>
+</body>
+</html>
